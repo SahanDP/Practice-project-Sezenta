@@ -20,13 +20,13 @@ app.use(studentRoutes);
 //assigning a port to app to run on
 const PORT = 8000; 
 
-//connection configuration-1
+//connection configuration-**
 const DB_URL = 'mongodb+srv://SDP:SDP1234@mernapp.cc5whz4.mongodb.net/?retryWrites=true&w=majority';
 
 //fixed the warning
 mongoose.set('strictQuery', false);
 
-//connection configuration-1
+//connection configuration-**
 mongoose.connect(DB_URL)
 .then(()=>{
     console.log("DB Connected");  //learn js promises 
@@ -42,5 +42,4 @@ app.listen(PORT, ()=>{
 
 
 
-//Make a model(models/student.js)
-//Make routes(CRUD)
+
